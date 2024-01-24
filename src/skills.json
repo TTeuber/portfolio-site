@@ -20,21 +20,11 @@
         },
         {
           "framework": "Svelte",
-          "logo": "svelte.png",
-            "tools": [
-              {
-                "tool": "Sveltekit",
-                "logo": "svelte.png"
-              }
-            ]
+          "logo": "svelte.png"
         },
         {
           "framework": "Angular",
           "logo": "angular.png"
-        },
-        {
-          "framework": "Astro",
-          "logo": "astro.png"
         },
         {
           "framework": "Prisma",

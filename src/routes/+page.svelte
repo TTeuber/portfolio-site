@@ -1,18 +1,26 @@
 <script lang="ts">
-	import Skills from '$lib/components/Skills.svelte';
+	import Skills from '$lib/components/sections/Skills.svelte';
+	import Projects from '$lib/components/sections/Projects.svelte';
+	import Hero from '$lib/components/sections/Hero.svelte';
 </script>
 
 <div class="flex w-full flex-col">
-	<div id="home" class="min-h-screen w-full bg-blue-200 p-6 dark:bg-teal-900">
-		<p>home</p>
+	<div
+		id="home"
+		class="min-h-screen w-full bg-gradient-to-r from-green-800 via-teal-800 to-blue-800"
+	>
+		<Hero />
 	</div>
 	<div
 		id="projects"
-		class="min-h-screen w-full border-y border-black bg-violet-200 p-6 dark:bg-violet-900"
+		class="min-h-screen w-full border-y border-black bg-gradient-to-r from-violet-800 via-purple-800 to-fuchsia-800 p-6"
 	>
-		<p>projects</p>
+		<Projects />
 	</div>
-	<div id="skills" class="bg min-h-screen w-full bg-sky-200 p-6 dark:bg-sky-900">
+	<div
+		id="skills"
+		class="min-h-screen w-full bg-gradient-to-r from-sky-800 via-cyan-800 to-emerald-800 p-6"
+	>
 		<Skills />
 	</div>
 </div>
