@@ -1,0 +1,114 @@
+{
+  "languages": [
+    {
+      "language":  "JavaScript/TypeScript",
+      "logo": "typescript.png",
+      "frameworks": [
+        {
+          "framework": "React",
+          "logo": "react.png",
+          "tools": [
+            {
+              "tool": "Next.js",
+              "logo": "nextjs.png"
+            },
+            {
+              "tool": "Redux",
+              "logo": "redux.png"
+            }
+          ]
+        },
+        {
+          "framework": "Svelte",
+          "logo": "svelte.png",
+            "tools": [
+              {
+                "tool": "Sveltekit",
+                "logo": "svelte.png"
+              }
+            ]
+        },
+        {
+          "framework": "Angular",
+          "logo": "angular.png"
+        },
+        {
+          "framework": "Astro",
+          "logo": "astro.png"
+        },
+        {
+          "framework": "Prisma",
+          "logo": "prisma.png"
+        }
+      ]
+    },
+    {
+      "language":  "Python",
+      "logo": "python.png",
+      "frameworks": [
+        {
+          "framework": "Django",
+          "logo": "django.png"
+        },
+        {
+          "framework": "Flask",
+          "logo": "flask.png"
+        },
+        {
+          "framework": "Selenium",
+          "logo": "selenium.png"
+        }
+      ]
+    },
+    {
+      "language":  "C#",
+      "logo": "csharp.png",
+      "frameworks": [
+        {
+        "framework": "ASP.NET Core",
+        "logo": "dotnet.png"
+        },
+        {
+          "framework": "Blazor",
+          "logo": "blazor.png"
+        },
+        {
+          "framework": "Entity Framework Core",
+            "logo": "entity.png"
+        }
+      ]
+    },
+    {
+      "language":  "HTML/CSS",
+      "logo": "html.png",
+      "frameworks": [
+        {
+          "framework": "SASS/SCSS",
+          "logo": "sass.png"
+        },
+        {
+          "framework": "TailwindCSS",
+          "logo": "tailwind.png"
+        }
+      ]
+    },
+    {
+      "language":  "SQL",
+      "logo": "sql.png",
+      "frameworks": [
+        {
+          "framework": "PostgreSQL",
+          "logo": "postgres.png"
+        },
+        {
+          "framework": "MySQL",
+          "logo": "mysql.png"
+        },
+        {
+          "framework": "SQLite",
+          "logo": "sqlite.png"
+        }
+      ]
+    }
+  ]
+}
