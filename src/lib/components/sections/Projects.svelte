@@ -10,7 +10,7 @@
 				git: 'https://github.com/TTeuber/lonely_together_website',
 				img: '/projects/lonelytogether.png',
 				description:
-					"A website for the band Lonely Together. I built this website using SvelteKit and TailwindCSS. I also used the Spotify API to get the band's music and display it on the website."
+					'A website for the band Lonely Together. I built this website using SvelteKit and SASS. I also used Sendgrid for the email contact form.'
 			},
 			{
 				name: 'Post Definitions Podcast',
@@ -18,7 +18,7 @@
 				git: 'https://github.com/TTeuber/post-definitions-website',
 				img: '/projects/postdefinitions.png',
 				description:
-					"A website for the Post Definitions Podcast. I built this website using SvelteKit and TailwindCSS. I also used the Spotify API to get the band's music and display it on the website."
+					"A website for the Post Definitions Podcast. I built this website using React, Next.js, and TailwindCSS. I also used the YouTube API to get the podcast's videos and display them on the website."
 			},
 			{
 				name: 'Tyler Teuber',
@@ -26,25 +26,40 @@
 				git: '',
 				img: '/projects/portfolio.png',
 				description:
-					"A website for myself. I built this website using SvelteKit and TailwindCSS. I also used the Spotify API to get the band's music and display it on the website."
+					'The portfolio website that you are currently viewing. I built this website using SvelteKit and TailwindCSS.'
 			}
 		];
 
-	const projects: { name: string; git: string; img: string }[] = [
+	const projects: {
+		name: string;
+		link: string | undefined;
+		description: string;
+		git: string;
+		img: string;
+	}[] = [
 		{
 			name: 'Chat Controlled Todo App',
-			git: '',
-			img: ''
+			git: 'https://github.com/TTeuber/chat_controlled_todo',
+			description:
+				'A todo app controlled completely using a chat interface. This project uses the function calling functionality from the ChaptGPT api. This app was built using Python, Flask, and HTMX',
+			img: '/projects/chatcontrol.png',
+			link: undefined
 		},
 		{
 			name: 'Web Developer Assistant',
-			git: '',
-			img: ''
+			description:
+				'An AI chat assistant for answering questions about web development. This project was built using Angular and SASS on the frontend, .NET Core and Entity Framework on the backend, and the ChatGPT API',
+			git: 'https://github.com/TTeuber/web-dev-assistant',
+			img: '/projects/webdevassistant.png',
+			link: undefined
 		},
 		{
-			name: 'Habit Percentage Tracker',
-			git: '',
-			img: ''
+			name: 'Multi-Media Website',
+			description:
+				'A website for displaying my music and photography. This project was built using React, Next.js, and Tailwind',
+			git: 'https://github.com/TTeuber/portfolio_website',
+			img: '/projects/multimedia.png',
+			link: 'portfolio-website-ljhe5ib8o-tteuber.vercel.app'
 		}
 	];
 </script>
@@ -54,15 +69,14 @@
 		<Card.Title class="text-center text-3xl">Projects and Websites</Card.Title>
 	</Card.Header>
 	<Card.Content class="flex flex-col gap-6">
-		<!--		<p class="border-t py-6 text-center text-3xl">Websites</p>-->
 		<div class="flex justify-evenly gap-4">
 			{#each websites as website}
 				<Project {...website} />
 			{/each}
 		</div>
 		<div class="flex justify-evenly gap-4">
-			{#each websites as website}
-				<Project {...website} />
+			{#each projects as project}
+				<Project {...project} />
 			{/each}
 		</div>
 	</Card.Content>

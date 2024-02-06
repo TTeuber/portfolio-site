@@ -9,3 +9,10 @@
 	<Nav />
 	<slot />
 </div>
+
+<style lang="postcss">
+	:global(h1, h2) {
+		font-family: 'Rubik Mono One', sans-serif;
+		font-size: 1rem;
+	}
+</style>
